@@ -6,7 +6,7 @@ void setup()
   Serial.begin(9600);
   for (int i = 0; i < NumOctaves; i++)
   {
-    pinMode(OctavePins[i], INPUT);
+    pinMode(OctavePins[i], INPUT_PULLUP);
   }
   pinMode(13, OUTPUT);
 }
